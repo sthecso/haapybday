@@ -12,53 +12,63 @@ body {
 .cake-container {
   position: relative;
   text-align: center;
-  max-width: 1000px; /* Define a largura máxima para o bolo */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding-top: 50px; /* Diminui a distância entre o bolo e a bandeira */
+  max-width: 1000px;
+  margin: 0 auto; 
+  padding-top: 50px; 
 }
 
 .cake img {
-  width: 500px; /* Largura do bolo */
-  height: auto; /* Mantém a proporção da imagem */
-  max-width: 100%; /* Largura máxima do bolo */
+  width: 500px;
+  height: auto; 
+  max-width: 100%;
 }
 
 .flag-container {
   position: absolute;
-  top: -100px; /* Posiciona a bandeira acima do bolo */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Move a metade da largura para a esquerda */
-  width: 500px; /* Largura da bandeira */
-  height: auto; /* Mantém a proporção da imagem */
+  top: -100px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 500px; 
+  height: auto; 
 }
 
 .flag-container img {
-  width: 100%; /* Ocupa 100% da largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%; 
+  height: auto; 
 }
 
 #play-button {
-  background-color: purple; /* Cor de fundo roxa */
-  color: yellow; /* Cor do texto amarela */
-  padding: 10px 100px; /* Espaçamento interno */
-  border: none; /* Remove a borda */
-  cursor: pointer; /* Mostra o cursor como apontador ao passar o mouse */
-  transition: background-color 0.3s, color 0.3s; /* Transição suave */
-  position: absolute; /* Posiciona de forma absoluta dentro do contêiner */
-  bottom: 90px; /* Distância do botão até o final do contêiner */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Move a metade da largura para a esquerda */
+  background-color: purple;
+  color: yellow; 
+  padding: 10px 100px;
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 50px;
 }
 
-/* Estilos ao passar o mouse sobre o botão Play */
 #play-button:hover {
-  background-color: black; /* Cor de fundo preta */
-  color: yellow; /* Cor do texto amarela */
+  background-color: black; 
+  color: yellow;
 }
 
 @media only screen and (max-width: 600px) {
   .flag-container {
-    width: 300px; /* Reduza a largura da bandeira para 400px em telas menores */
+    width: 300px;
+    top: -10px; 
+  }
+
+  .cake img {
+    width: 300px;
+    height: auto; 
+    max-width: 100%;
+  }
+
+  #play-button {
+    bottom: 80px;
   }
 }
